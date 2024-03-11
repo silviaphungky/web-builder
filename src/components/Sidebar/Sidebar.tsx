@@ -98,24 +98,24 @@ const Sidebar = () => {
           {
             label: 'Sales Management',
             icon: <IconBasket />,
-            path: 'sales-management/pipeline',
+            path: '/sales-management/pipeline',
             children: [
               {
                 label: 'Pipeline',
                 icon: <IconPipeline />,
-                path: 'sales-management/pipeline',
+                path: '/sales-management/pipeline',
               },
               {
                 label: 'Leads',
                 icon: <IconLeads />,
-                path: 'sales-management/leads',
+                path: '/sales-management/leads',
               },
             ],
           },
           {
             label: 'Financial',
             icon: <IconDollar />,
-            path: 'financial',
+            path: '/financial',
           },
         ].map((item, index) => {
           const isActive = path === item.path
