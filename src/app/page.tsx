@@ -1,6 +1,7 @@
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
 import { Card, Typography } from '@mui/material'
 import { IconDollarCircle, IconEarning } from '@/components/icons'
+import { BarCard, ChartCard } from './pages/dashboard/components'
 
 export default function Home() {
   return (
@@ -108,8 +109,12 @@ export default function Home() {
       </Grid2>
 
       <Grid2 spacing={2} container>
-        <Grid2 lg={6}></Grid2>
-        <Grid2 lg={6}></Grid2>
+        <Grid2 lg={6}>
+          <ChartCard />
+        </Grid2>
+        <Grid2 lg={6}>
+          <BarCard />
+        </Grid2>
       </Grid2>
     </main>
   )

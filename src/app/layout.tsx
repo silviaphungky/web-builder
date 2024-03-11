@@ -23,6 +23,11 @@ const theme = createTheme({
     h4: {
       fontSize: 24,
       fontWeight: 700,
+      color: '#1B2559',
+    },
+    h5: {
+      fontWeight: 700,
+      color: '#1B2559',
     },
     button: {
       fontStyle: 'italic',
