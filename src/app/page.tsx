@@ -1,95 +1,116 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
+import { Card, Typography } from '@mui/material'
+import { IconDollarCircle, IconEarning } from '@/components/icons'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main>
+      <Grid2 container spacing={2}>
+        <Grid2 lg={2}>
+          <Card sx={{ padding: '0.75rem', borderRadius: '1.25rem' }}>
+            <Grid2 container alignItems={'center'} spacing={2}>
+              <Grid2 lg={3}>
+                <IconEarning />
+              </Grid2>
+              <Grid2 lg={9}>
+                <Typography variant="subtitle1" sx={{ color: '#A3AED0' }}>
+                  Earnings
+                </Typography>
+                <Typography variant="h4" sx={{ color: '#2B3674' }}>
+                  $350.4
+                </Typography>
+              </Grid2>
+            </Grid2>
+          </Card>
+        </Grid2>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <Grid2 lg={2}>
+          <Card sx={{ padding: '0.75rem', borderRadius: '1.25rem' }}>
+            <Grid2 container spacing={2} alignItems={'center'}>
+              <Grid2 lg={3}>
+                <IconDollarCircle />
+              </Grid2>
+              <Grid2 lg={9}>
+                <Typography variant="subtitle1" sx={{ color: '#A3AED0' }}>
+                  Spend this month
+                </Typography>
+                <Typography variant="h4" sx={{ color: '#2B3674' }}>
+                  $642.39
+                </Typography>
+              </Grid2>
+            </Grid2>
+          </Card>
+        </Grid2>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <Grid2 lg={2}>
+          <Card sx={{ padding: '0.75rem', borderRadius: '1.25rem' }}>
+            <Typography variant="subtitle1" sx={{ color: '#A3AED0' }}>
+              Sales
+            </Typography>
+            <Typography variant="h4" sx={{ color: '#2B3674' }}>
+              $574.34
+            </Typography>
+          </Card>
+        </Grid2>
+        <Grid2 lg={2}>
+          <Card sx={{ padding: '0.75rem', borderRadius: '1.25rem' }}>
+            <Grid2 container alignItems={'center'} spacing={2}>
+              <Grid2 lg={9}>
+                <Typography variant="subtitle1" sx={{ color: '#A3AED0' }}>
+                  Your balance
+                </Typography>
+                <Typography variant="h4" sx={{ color: '#2B3674' }}>
+                  $1,000
+                </Typography>
+              </Grid2>
+              <Grid2 lg={3}>
+                <IconEarning />
+              </Grid2>
+            </Grid2>
+          </Card>
+        </Grid2>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+        <Grid2 lg={2}>
+          <Card sx={{ padding: '0.75rem', borderRadius: '1.25rem' }}>
+            <Grid2 container alignItems={'center'} spacing={2}>
+              <Grid2 lg={3}>
+                <IconEarning />
+              </Grid2>
+              <Grid2 lg={9}>
+                <Typography variant="subtitle1" sx={{ color: '#A3AED0' }}>
+                  New Tasks
+                </Typography>
+                <Typography variant="h4" sx={{ color: '#2B3674' }}>
+                  154
+                </Typography>
+              </Grid2>
+            </Grid2>
+          </Card>
+        </Grid2>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+        <Grid2 lg={2}>
+          <Card sx={{ padding: '0.75rem', borderRadius: '1.25rem' }}>
+            <Grid2 container alignItems={'center'} spacing={2}>
+              <Grid2 lg={3}>
+                <IconEarning />
+              </Grid2>
+              <Grid2 lg={9}>
+                <Typography variant="subtitle1" sx={{ color: '#A3AED0' }}>
+                  Total Projects
+                </Typography>
+                <Typography variant="h4" sx={{ color: '#2B3674' }}>
+                  2935
+                </Typography>
+              </Grid2>
+            </Grid2>
+          </Card>
+        </Grid2>
+      </Grid2>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Grid2 spacing={2} container>
+        <Grid2 lg={6}></Grid2>
+        <Grid2 lg={6}></Grid2>
+      </Grid2>
     </main>
-  );
+  )
 }
